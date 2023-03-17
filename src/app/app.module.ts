@@ -40,23 +40,16 @@ import { CalendarModule, DatePickerModule, DateRangePickerModule, DateTimePicker
 
 
 @NgModule({
-  declarations: [  
+  declarations: [
     AppComponent,
     HeaderComponent,
     SidenavComponent,
     HomeComponent,
 
-
-  
-  
     TeacherlistComponent,
     TeacheraddComponent,
    TeacherviewComponent,
-    TeachereditComponent
-
-  
-    
-
+    TeachereditComponent,
 
     StudentlistComponent,
     StudentaddComponent,
@@ -75,7 +68,7 @@ import { CalendarModule, DatePickerModule, DateRangePickerModule, DateTimePicker
     TeacherDashboardComponent,
     StudentDashboardComponent
 
-  ],
+  ], 
   imports: [
     BrowserModule,
     AppRoutingModule,
