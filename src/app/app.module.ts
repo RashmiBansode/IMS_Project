@@ -9,11 +9,12 @@ import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HomeComponent } from './home/home.component';
 
-
-
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { AddstudentComponent } from './student/addstudent/addstudent.component';
+import { ListstudentComponent } from './student/liststudent/liststudent.component';
+import { EditstudentComponent } from './student/editstudent/editstudent.component';
+import { ViewstudentComponent } from './student/viewstudent/viewstudent.component';
 import { TeacherlistComponent } from './teacher/teacherlist/teacherlist.component';
 
 import { TeacheraddComponent } from './teacher/teacheradd/teacheradd.component';
@@ -39,6 +40,8 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 import { CalendarModule, DatePickerModule, DateRangePickerModule, DateTimePickerModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,15 +49,22 @@ import { CalendarModule, DatePickerModule, DateRangePickerModule, DateTimePicker
     SidenavComponent,
     HomeComponent,
 
+
+  
+  
     TeacherlistComponent,
     TeacheraddComponent,
    TeacherviewComponent,
     TeachereditComponent,
 
-    StudentlistComponent,
-    StudentaddComponent,
-    StudenteditComponent,
-    TeacherComponent,
+  
+    
+
+
+    // StudentlistComponent,
+    // StudentaddComponent,
+    // StudenteditComponent,
+    // TeacherComponent,
     TeacherlistComponent,
     AddsubjectComponent,
     ListsubjectComponent,
@@ -66,7 +76,11 @@ import { CalendarModule, DatePickerModule, DateRangePickerModule, DateTimePicker
     RegisterComponent,
     AdminDashboardComponent,
     TeacherDashboardComponent,
-    StudentDashboardComponent
+    StudentDashboardComponent,
+    AddstudentComponent,
+    ListstudentComponent,
+    EditstudentComponent,
+    ViewstudentComponent
 
   ], 
   imports: [

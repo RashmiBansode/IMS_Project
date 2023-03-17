@@ -41,16 +41,16 @@
         data-bs-parent="#accordionExample">
         <div class="accordion-body mx-4">
           <ul>
-            <li><a href="studentlist">
+            <li><a [routerLink]="['/liststudent']">
                 <h3>Student List</h3>
               </a></li>
-            <li> <a href="">
+            <li> <a [routerLink]="['/viewstudent']">
                 <h3>Student View</h3>
               </a></li>
-            <li> <a href="studentadd">
+            <li> <a [routerLink]="['/addstudent']">
                 <h3>Student Add</h3>
               </a></li>
-            <li> <a href="studentedit">
+            <li> <a [routerLink]="['/editstudent']">
                 <h3>Student Edit</h3>
               </a></li> 
           </ul>
