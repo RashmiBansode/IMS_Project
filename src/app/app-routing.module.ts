@@ -27,6 +27,11 @@ import { ViewstudentComponent } from './student/viewstudent/viewstudent.componen
 const routes: Routes = [
   {path:'',redirectTo:'home', pathMatch:'full'},
   {path:'home', component:HomeComponent},
+
+  {path:'teacherlist',component:TeacherlistComponent},
+      {path:'teacheradd',component:TeacheraddComponent},
+     {path:'teacheredit',component:TeachereditComponent},
+     {path:'teacherview',component:TeacherviewComponent},
   {path:'liststudent',component:ListstudentComponent},
       {path:'addstudent',component:AddstudentComponent},
      {path:'editstudent',component:EditstudentComponent},
@@ -36,6 +41,7 @@ const routes: Routes = [
      {path:'teacheredit',component:TeachereditComponent},
      {path:'teacherview',component:TeacherviewComponent},
   
+
 
   {path:'listsubject',component:ListsubjectComponent},
   {path:'addsubject', component:AddsubjectComponent},

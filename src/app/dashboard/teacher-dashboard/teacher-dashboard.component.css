@@ -9,18 +9,21 @@
 
 
 .icon{
-    font-size:2.5rem;
+    font-size:4.5rem;
     margin: auto;
+    /* margin-top: 10px; */
     /* background-color: lightcoral; */
 }
 .text-1{
-    margin: auto;
+    /* margin: auto; */
+    margin-right: 20px;
+    margin-top: 20px;
 }
 h3{
     font-size: 25px;
     padding-top: 10px;
 }
-.ejs-calendar{
+/* .ejs-calendar{
     width: 100%;
     height: 50%;
-}
+} */

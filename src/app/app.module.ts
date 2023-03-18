@@ -43,23 +43,24 @@ import { CalendarModule, DatePickerModule, DateRangePickerModule, DateTimePicker
 
 
 @NgModule({
-  declarations: [  
+  declarations: [
     AppComponent,
     HeaderComponent,
     SidenavComponent,
     HomeComponent,
-TeacherlistComponent,
+    TeacherlistComponent,
     TeacheraddComponent,
    TeacherviewComponent,
     TeachereditComponent,
- AddsubjectComponent,
+    TeacherlistComponent,
+    AddsubjectComponent,
     ListsubjectComponent,
     EditsubjectComponent,
     DepartmentListComponent,
     DepartmentAddComponent,
     DepartmentEditComponent,
     FeesCollectionComponent,
-    RegisterComponent,
+    RegisterComponent, 
     AdminDashboardComponent,
     TeacherDashboardComponent,
     StudentDashboardComponent,
@@ -68,7 +69,7 @@ TeacherlistComponent,
     EditstudentComponent,
     ViewstudentComponent
 
-  ],
+  ], 
   imports: [
     BrowserModule,
     AppRoutingModule,
