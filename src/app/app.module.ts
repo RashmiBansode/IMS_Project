@@ -48,23 +48,10 @@ import { CalendarModule, DatePickerModule, DateRangePickerModule, DateTimePicker
     HeaderComponent,
     SidenavComponent,
     HomeComponent,
-
-
-  
-  
     TeacherlistComponent,
     TeacheraddComponent,
    TeacherviewComponent,
     TeachereditComponent,
-
-  
-    
-
-
-    // StudentlistComponent,
-    // StudentaddComponent,
-    // StudenteditComponent,
-    // TeacherComponent,
     TeacherlistComponent,
     AddsubjectComponent,
     ListsubjectComponent,
@@ -73,7 +60,7 @@ import { CalendarModule, DatePickerModule, DateRangePickerModule, DateTimePicker
     DepartmentAddComponent,
     DepartmentEditComponent,
     FeesCollectionComponent,
-    RegisterComponent,
+    RegisterComponent, 
     AdminDashboardComponent,
     TeacherDashboardComponent,
     StudentDashboardComponent,
