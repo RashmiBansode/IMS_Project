@@ -135,11 +135,11 @@
       </div>
     </div>
 
-    
+
     <div class="accordion-item">
       <h2 class="accordion-header" id="heading6">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
+          aria-expanded="false" aria-controls="collapse6">
           <h4 style="margin-top: 30px;"><i class="fa-solid fa-list-check mx-2"></i>Attendance</h4>
         </button>
       </h2>
@@ -220,6 +220,9 @@
 
   <h3 class="text-center">Pages</h3>
   <div class="manage">
+
+
+
     <div class="accordion " id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading_2">
@@ -232,16 +235,16 @@
           data-bs-parent="#accordionExample">
           <div class="accordion-body mx-4">
             <ul>
-              <li><a href="">
+              <li><a [routerLink]="['/login/']">
                   <h3>Login</h3>
                 </a></li>
               <li> <a [routerLink]="['/register/']">
                   <h3>Register</h3>
                 </a></li>
-              <li> <a href="">
+              <li> <a [routerLink]="['/forgot/']">
                   <h3>Forget Password</h3>
                 </a></li>
-              <li><a href="">
+              <li><a [routerLink]="['/error']">
                   <h3>Error Page</h3>
                 </a></li>
             </ul>
@@ -385,4 +388,5 @@
       </div>
     </div>
   </div>
+
 </mat-nav-list>

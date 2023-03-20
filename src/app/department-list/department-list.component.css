@@ -1,55 +1,6 @@
-.heading
-{
-    display: flex;
-    flex-direction: column; 
-    margin-left: 2rem;   
-    margin-top: 2rem;
-}
-.downld
-{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -4rem;
-}
-.table
-{
-  display: flex;
-  flex-direction: column;
-  margin-top: 1rem;
-  width: 80%;
-  margin-left: 1rem;
-  
-}
-h2
-{
-    font-size: 30px;
-}
-h4
-{
-    font-size: 20px;
-}
-.add
-{
-    margin-left: 0.5rem;
-    margin-right: 1rem;
-}
-.fa-download
-{
-    padding-right: 10px;
-}
-.copy
-{
-    /* position: relative;
-    top: 20rem; */
-    font-size: 20px;
-    margin-left: 3rem;
-}
+
 .show
 {
     display: flex;
-    font-size: 18px;
-}
-th
-{
-    font-size: 18px;
+    flex-wrap: wrap;
 }

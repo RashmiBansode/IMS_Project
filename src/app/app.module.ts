@@ -38,30 +38,37 @@ import { StudentDashboardComponent } from './dashboard/student-dashboard/student
 import { NgApexchartsModule } from 'ng-apexcharts';
 // ---------------------------dashboard---------------
 import { CalendarModule, DatePickerModule, DateRangePickerModule, DateTimePickerModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+
 import { AttendancestudComponent } from './attendance/attendancestud/attendancestud.component';
 import { ViewattendanceComponent } from './attendance/viewattendance/viewattendance.component';
+
+import { LoginComponent } from './login/login.component';
+import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
+import { ErrorComponent } from './error/error.component';
+
 
 
 
 
 @NgModule({
-  declarations: [  
+  declarations: [
     AppComponent,
     HeaderComponent,
     SidenavComponent,
     HomeComponent,
-TeacherlistComponent,
+    TeacherlistComponent,
     TeacheraddComponent,
    TeacherviewComponent,
     TeachereditComponent,
- AddsubjectComponent,
+    TeacherlistComponent,
+    AddsubjectComponent,
     ListsubjectComponent,
     EditsubjectComponent,
     DepartmentListComponent,
     DepartmentAddComponent,
     DepartmentEditComponent,
     FeesCollectionComponent,
-    RegisterComponent,
+    RegisterComponent, 
     AdminDashboardComponent,
     TeacherDashboardComponent,
     StudentDashboardComponent,
@@ -69,10 +76,16 @@ TeacherlistComponent,
     ListstudentComponent,
     EditstudentComponent,
     ViewstudentComponent,
-    AttendancestudComponent,
-    ViewattendanceComponent
 
-  ],
+    AttendancestudComponent,
+    ViewattendanceComponent,
+
+    LoginComponent,
+    ForgotPassComponent,
+    ErrorComponent,
+
+
+  ], 
   imports: [
     BrowserModule,
     AppRoutingModule,

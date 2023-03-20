@@ -21,14 +21,25 @@ import { ListstudentComponent } from './student/liststudent/liststudent.componen
 import { AddstudentComponent } from './student/addstudent/addstudent.component';
 import { EditstudentComponent } from './student/editstudent/editstudent.component';
 import { ViewstudentComponent } from './student/viewstudent/viewstudent.component';
+
 import { AttendancestudComponent } from './attendance/attendancestud/attendancestud.component';
 import { ViewattendanceComponent } from './attendance/viewattendance/viewattendance.component';
+
+import { LoginComponent } from './login/login.component';
+import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
+import { ErrorComponent } from './error/error.component';
+
 
 
 
 const routes: Routes = [
   {path:'',redirectTo:'admin', pathMatch:'full'},
   {path:'home', component:HomeComponent},
+
+  {path:'teacherlist',component:TeacherlistComponent},
+      {path:'teacheradd',component:TeacheraddComponent},
+     {path:'teacheredit',component:TeachereditComponent},
+     {path:'teacherview',component:TeacherviewComponent},
   {path:'liststudent',component:ListstudentComponent},
       {path:'addstudent',component:AddstudentComponent},
      {path:'editstudent',component:EditstudentComponent},
@@ -37,6 +48,13 @@ const routes: Routes = [
       {path:'teacheradd',component:TeacheraddComponent},
      {path:'teacheredit',component:TeachereditComponent},
      {path:'teacherview',component:TeacherviewComponent},
+
+     {path:"login", component:LoginComponent},
+     {path:'forgot', component:ForgotPassComponent},
+     {path:"error", component:ErrorComponent},
+
+
+
   {path:'listsubject',component:ListsubjectComponent},
   {path:'addsubject', component:AddsubjectComponent},
   {path:'editsubject',component:EditsubjectComponent},

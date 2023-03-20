@@ -1,1 +1,361 @@
-<p>student-dashboard works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 ">
+            <h1 class="">Welcome Students!</h1>
+            <h4 class="m-2">Dashboard / <span>Student Dashboard</span></h4>
+        </div>
+    </div>
+    <!-- --------------------------------------------------- -->
+    <div class="row">
+        <div class="col-md-3  mt-2">
+            <div class="box-1">
+                <div class="card-body d-flex justify-content-between">
+                    <div class="icon">
+                        <i class="fa-sharp fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="text-1">
+                        <h3>04/06</h3>
+                        <h5>All Courses</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-3 mt-2">
+            <div class="box-1">
+                <div class="card-body d-flex justify-content-between">
+                    <div class="icon">
+                        <i class="fa-sharp fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="text-1">
+                        <h3>40/60</h3>
+                        <h5>All Project</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-3 mt-2">
+            <div class="box-1">
+                <div class="card-body d-flex justify-content-between">
+                    <div class="icon">
+                        <i class="fa-sharp fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="text-1">
+                        <h3>30/50</h3>
+                        <h5>All Attendees</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-3 mt-2">
+            <div class="box-1">
+                <div class="card-body d-flex justify-content-between">
+                    <div class="icon">
+                        <i class="fa-sharp fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="text-1">
+                        <h3>15/20</h3>
+                        <h5>All Passed</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- -------------------------------------------------------------- -->
+
+    <div class="row mt-4">
+
+        <div class="col-md-4 mt-2">
+            <div class="card mb-3" style="max-width: 540px;">
+                <h5 class="card-header table-text">Today’s Lesson</h5>
+                <div class="row g-0 ">
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <div id="chart">
+                                <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart"
+                                    [plotOptions]="chartOptions.plotOptions" [labels]="chartOptions.labels"></apx-chart>
+                            </div>
+                            <div class="text">
+                                <h4 class=" d-flex justify-content-center">lesson Learned</h4>
+                                <h3 class="d-flex justify-content-center text-primary"> 10 / <span> 50</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h1>Facilisi etiam</h1>
+                            <h3>2.30pm - 3.30pm</h3>
+                            <h3> 5 Lessons</h3>
+                            <h3> 60 Minutes</h3>
+                            <h3> 5 Asignment</h3>
+                        </div>
+                        <button type="button" class="btn btn-outline-info mb-3">Skip</button> <br>
+                        <button type="button" class="btn btn-info mb-3">Continue</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-2">
+            <div class="card mb-3" style="max-width: 540px;">
+                <h5 class="card-header table-text">View All Courses</h5>
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <div id="chart">
+                                <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart"
+                                    [plotOptions]="chartOptions.plotOptions" [labels]="chartOptions.labels"></apx-chart>
+                            </div>
+                            <div class="text">
+                                <h4 class=" d-flex justify-content-center">lesson Learned</h4>
+                                <h3 class="d-flex justify-content-center text-primary"> 25 / <span> 50</span></h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h1>Augue mauris</h1>
+                            <h3>3.30pm - 4.30pm</h3>
+                            <h3> 6 Lessons</h3>
+                            <h3> 60 Minutes</h3>
+                            <h3> 6 Asignment</h3>
+                        </div>
+                        <button type="button" class="btn btn-outline-info mb-3 ">Skip</button> <br>
+                        <button type="button" class="btn btn-info mb-3">Continue</button>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4 mt-2">
+            <div class="card">
+                <h5 class="card-header table-text">Calendar</h5>
+
+                <div class="calendar d-flex justify-content-center">
+                    <ejs-calendar [value]="">
+
+                    </ejs-calendar>
+                </div>
+                <div class="box-3 col-md-12">
+                    <div class="text-3 d-flex mt-2">
+                        <p class="">9 PM</p>
+                        <div class="box-3-1 d-flex bg-warning">
+
+                            <h5 class="">Fermentum</h5>
+                            <span class="mx-4">9am - 10pm</span>
+                        </div>
+
+                    </div>
+                    <div class="text-3 d-flex mt-2">
+                        <p>9 PM</p>
+                        <div class="box-3-1 d-flex bg-secondary">
+
+                            <h5 class="">Fermentum</h5>
+                            <span class="mx-4">9am - 10pm</span>
+                        </div>
+
+                    </div>
+
+                    <div class="text-3 d-flex mt-2">
+                        <p>9 PM</p>
+                        <div class="box-3-1 d-flex bg-danger">
+
+                            <h5 class="">Fermentum</h5>
+                            <span class="mx-4">9am - 10pm</span>
+                        </div>
+
+                    </div>
+
+                    <div class="text-3 d-flex mt-2">
+                        <p>9 PM</p>
+                        <div class="box-3-1 d-flex bg-primary">
+
+                            <h5 class="">Fermentum</h5>
+                            <span class="mx-4">9am - 10pm</span>
+                        </div>
+
+                    </div>
+
+                    <div class="text-3 d-flex mt-2">
+                        <p>9 PM</p>
+                        <div class="box-3-1 d-flex justify-content-center  bg-info">
+
+                            <h5 class="">Fermentum</h5>
+                            <span class="mx-4">9am - 10pm</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ========================================================= -->
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="box-3 mt-2">
+                <div class="card">
+                    <h5 class="card-header ">
+                        <h1 class="mt-1">Revenue</h1>
+                    </h5>
+                    <div class="card-body" id="chart3">
+
+
+                        <!-- <apx-chart [series]="series" [chart]="chart" [title]="title"></apx-chart> -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mt-2">
+            <div class="box-2">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h1 class="text-start">Semester Progress</h1>
+                    </div>
+                    <div class="card-body">
+                        <!-- <div id="chart">
+                            <apx-chart
+                              [series]="chartOptions.series"
+                              [chart]="chartOptions.chart"
+                              [plotOptions]="chartOptions.plotOptions"
+                              [labels]="chartOptions.labels"
+                              
+                            ></apx-chart> -->
+                    </div>
+                    <div class="text">
+                        <h5 class=" d-flex justify-content-center">lesson progress</h5>
+                        <h3 class="d-flex justify-content-center text-primary"> 30 / <span> 60</span></h3>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- ------------------------------------------------  -->
+
+
+<!-- ============================================================ -->
+
+
+
+
+
+
+
+
+
+<!-- =================================================== -->
+
+<div class="row">
+    <div class="col-md-3 mt-2">
+        <div class="box-5 bg-primary">
+            <div class="card-body d-flex justify-content-between">
+                <div class="text-1 ">
+                    <h3>50095</h3>
+                    <h5>Follows</h5>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-3 mt-2">
+        <div class="box-5 bg-info">
+            <div class="card-body d-flex justify-content-between">
+                <div class="text-1">
+                    <h3>48596</h3>
+                    <h5>Follows</h5>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-3 mt-2">
+        <div class="box-5 bg-danger">
+            <div class="card-body d-flex justify-content-between">
+                <div class="text-1">
+                    <h3>52085</h3>
+                    <h5>Follows</h5>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-3 mt-2">
+        <div class="box-5 bg-warning">
+            <div class="card-body d-flex justify-content-between">
+                <div class="text-1">
+                    <h3>69050</h3>
+                    <h5>Follows</h5>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!-- ================================================================ -->
+
+<div class="row">
+    <div class="col-md-6 mt-4">
+        <h2>Copyright © 2020 Dreamguys.</h2>
+    </div>
+</div>
