@@ -1,0 +1,23 @@
+.table-wrapper{
+    max-width: 100%;
+    overflow-x: scroll;
+max-height: 350px;
+overflow-y: scroll;
+border: 1px solid black;
+}
+
+th{
+    position: sticky;
+    top: 0px;
+    background-color: rgb(39, 80, 119);
+    color: white;
+   
+}
+
+.add:hover{
+    background-color:rgb(39, 80, 119);
+}
+#id{
+    position: sticky;
+    left: 0px;
+}

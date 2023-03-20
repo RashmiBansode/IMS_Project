@@ -21,11 +21,13 @@ import { ListstudentComponent } from './student/liststudent/liststudent.componen
 import { AddstudentComponent } from './student/addstudent/addstudent.component';
 import { EditstudentComponent } from './student/editstudent/editstudent.component';
 import { ViewstudentComponent } from './student/viewstudent/viewstudent.component';
+import { AttendancestudComponent } from './attendance/attendancestud/attendancestud.component';
+import { ViewattendanceComponent } from './attendance/viewattendance/viewattendance.component';
 
 
 
 const routes: Routes = [
-  {path:'',redirectTo:'home', pathMatch:'full'},
+  {path:'',redirectTo:'admin', pathMatch:'full'},
   {path:'home', component:HomeComponent},
   {path:'liststudent',component:ListstudentComponent},
       {path:'addstudent',component:AddstudentComponent},
@@ -35,12 +37,9 @@ const routes: Routes = [
       {path:'teacheradd',component:TeacheraddComponent},
      {path:'teacheredit',component:TeachereditComponent},
      {path:'teacherview',component:TeacherviewComponent},
-  
-
   {path:'listsubject',component:ListsubjectComponent},
   {path:'addsubject', component:AddsubjectComponent},
   {path:'editsubject',component:EditsubjectComponent},
-
   {path:'departmentlist', component:DepartmentListComponent},
   {path:'departmentadd', component:DepartmentAddComponent},
   {path:'departmentedit', component:DepartmentEditComponent},
@@ -49,7 +48,9 @@ const routes: Routes = [
   {path:'admin',component:AdminDashboardComponent},
   {path:'teachDash',component:TeacherDashboardComponent},
   {path:'studentDash',component:StudentDashboardComponent},
-
+  {path:'editstudent/:id',component:EditstudentComponent},
+  {path:'studattend',component:AttendancestudComponent},
+  {path:'viewattend',component:ViewattendanceComponent},
 ];
 
 @NgModule({
