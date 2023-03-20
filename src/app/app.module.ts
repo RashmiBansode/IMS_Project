@@ -38,6 +38,9 @@ import { StudentDashboardComponent } from './dashboard/student-dashboard/student
 import { NgApexchartsModule } from 'ng-apexcharts';
 // ---------------------------dashboard---------------
 import { CalendarModule, DatePickerModule, DateRangePickerModule, DateTimePickerModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { LoginComponent } from './login/login.component';
+import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
+import { ErrorComponent } from './error/error.component';
 
 
 
@@ -67,7 +70,10 @@ import { CalendarModule, DatePickerModule, DateRangePickerModule, DateTimePicker
     AddstudentComponent,
     ListstudentComponent,
     EditstudentComponent,
-    ViewstudentComponent
+    ViewstudentComponent,
+    LoginComponent,
+    ForgotPassComponent,
+    ErrorComponent
 
   ], 
   imports: [

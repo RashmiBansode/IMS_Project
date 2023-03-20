@@ -21,6 +21,9 @@ import { ListstudentComponent } from './student/liststudent/liststudent.componen
 import { AddstudentComponent } from './student/addstudent/addstudent.component';
 import { EditstudentComponent } from './student/editstudent/editstudent.component';
 import { ViewstudentComponent } from './student/viewstudent/viewstudent.component';
+import { LoginComponent } from './login/login.component';
+import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
+import { ErrorComponent } from './error/error.component';
 
 
 
@@ -40,7 +43,9 @@ const routes: Routes = [
       {path:'teacheradd',component:TeacheraddComponent},
      {path:'teacheredit',component:TeachereditComponent},
      {path:'teacherview',component:TeacherviewComponent},
-  
+     {path:"login", component:LoginComponent},
+     {path:'forgot', component:ForgotPassComponent},
+     {path:"error", component:ErrorComponent},
 
 
   {path:'listsubject',component:ListsubjectComponent},

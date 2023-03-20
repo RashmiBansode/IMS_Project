@@ -212,16 +212,16 @@
         data-bs-parent="#accordionExample">
         <div class="accordion-body mx-4">
           <ul>
-            <li><a href="">
+            <li><a [routerLink]="['/login/']">
                 <h3>Login</h3>
               </a></li>
             <li> <a [routerLink]="['/register/']">
                 <h3>Register</h3>
               </a></li>
-            <li> <a href="">
+            <li> <a [routerLink]="['/forgot/']">
                 <h3>Forget Password</h3>
               </a></li>
-            <li><a href="">
+            <li><a [routerLink]="['/error']">
                 <h3>Error Page</h3>
               </a></li>
           </ul>
