@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { MatIconModule } from '@angular/material/icon';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HomeComponent } from './home/home.component';
@@ -41,7 +41,6 @@ import { CalendarModule, DatePickerModule, DateRangePickerModule, DateTimePicker
 
 import { AttendancestudComponent } from './attendance/attendancestud/attendancestud.component';
 import { ViewattendanceComponent } from './attendance/viewattendance/viewattendance.component';
-
 import { LoginComponent } from './login/login.component';
 import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
 import { ErrorComponent } from './error/error.component';
@@ -96,11 +95,13 @@ import { ErrorComponent } from './error/error.component';
    ReactiveFormsModule,
    NgApexchartsModule,
    CalendarModule,
-    DatePickerModule,
+   MatIconModule,
+   DatePickerModule,
      TimePickerModule, 
      DateRangePickerModule,
       DateTimePickerModule
     
+
     
   ],
   providers: [],
