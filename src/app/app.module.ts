@@ -8,13 +8,21 @@ import { MatIconModule } from '@angular/material/icon';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HomeComponent } from './home/home.component';
-import { StudentlistComponent } from './studentlist/studentlist.component';
-import { StudentaddComponent } from './studentadd/studentadd.component';
-import { StudenteditComponent } from './studentedit/studentedit.component';
+
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TeacherComponent } from './teacher/teacher.component';
+import { AddstudentComponent } from './student/addstudent/addstudent.component';
+import { ListstudentComponent } from './student/liststudent/liststudent.component';
+import { EditstudentComponent } from './student/editstudent/editstudent.component';
+import { ViewstudentComponent } from './student/viewstudent/viewstudent.component';
 import { TeacherlistComponent } from './teacher/teacherlist/teacherlist.component';
+
+import { TeacheraddComponent } from './teacher/teacheradd/teacheradd.component';
+
+import { TeachereditComponent } from './teacher/teacheredit/teacheredit.component';
+import { TeacherviewComponent } from './teacher/teacherview/teacherview.component';
+
+
 import { AddsubjectComponent } from './subject/addsubject/addsubject.component';
 import { ListsubjectComponent } from './subject/listsubject/listsubject.component';
 import { EditsubjectComponent } from './subject/editsubject/editsubject.component';
@@ -23,12 +31,23 @@ import { DepartmentAddComponent } from './department-add/department-add.componen
 import { DepartmentEditComponent } from './department-edit/department-edit.component';
 import { FeesCollectionComponent } from './fees-collection/fees-collection.component';
 import { RegisterComponent } from './register/register.component';
-import { AdminDashboardComponent } from './dashboard/admin-dashboard/admin-dashboard.component';
+
+ import { AdminDashboardComponent } from './dashboard/admin-dashboard/admin-dashboard.component';
 import { TeacherDashboardComponent } from './dashboard/teacher-dashboard/teacher-dashboard.component';
 import { StudentDashboardComponent } from './dashboard/student-dashboard/student-dashboard.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
 // ---------------------------dashboard---------------
-import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
+import { CalendarModule, DatePickerModule, DateRangePickerModule, DateTimePickerModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+
+import { AttendancestudComponent } from './attendance/attendancestud/attendancestud.component';
+import { ViewattendanceComponent } from './attendance/viewattendance/viewattendance.component';
+import { LoginComponent } from './login/login.component';
+import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
+import { ErrorComponent } from './error/error.component';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -36,10 +55,10 @@ import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
     HeaderComponent,
     SidenavComponent,
     HomeComponent,
-    StudentlistComponent,
-    StudentaddComponent,
-    StudenteditComponent,
-    TeacherComponent,
+    TeacherlistComponent,
+    TeacheraddComponent,
+   TeacherviewComponent,
+    TeachereditComponent,
     TeacherlistComponent,
     AddsubjectComponent,
     ListsubjectComponent,
@@ -48,11 +67,24 @@ import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
     DepartmentAddComponent,
     DepartmentEditComponent,
     FeesCollectionComponent,
-    RegisterComponent,
+    RegisterComponent, 
     AdminDashboardComponent,
     TeacherDashboardComponent,
-    StudentDashboardComponent
-  ],
+    StudentDashboardComponent,
+    AddstudentComponent,
+    ListstudentComponent,
+    EditstudentComponent,
+    ViewstudentComponent,
+
+    AttendancestudComponent,
+    ViewattendanceComponent,
+
+    LoginComponent,
+    ForgotPassComponent,
+    ErrorComponent,
+
+
+  ], 
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -63,7 +95,13 @@ import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
    ReactiveFormsModule,
    NgApexchartsModule,
    CalendarModule,
-   MatIconModule
+   MatIconModule,
+   DatePickerModule,
+     TimePickerModule, 
+     DateRangePickerModule,
+      DateTimePickerModule
+    
+
     
   ],
   providers: [],

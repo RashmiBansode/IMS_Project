@@ -17,13 +17,13 @@
         data-bs-parent="#accordionExample">
         <div class="accordion-body mx-4">
           <ul>
-            <li><a [routerLink]="['admin']">
+            <li><a [routerLink]="['/admin']">
                 <h3>Admin Dashboard</h3>
               </a></li>
-            <li> <a [routerLink]="['teachDash']">
+            <li> <a [routerLink]="['/teachDash']">
                 <h3>Teacher Dashboard</h3>
               </a></li>
-            <li> <a [routerLink]="['studentDash']">
+            <li> <a [routerLink]="['/studentDash']">
                 <h3>Student Dashboard</h3>
               </a></li>
           </ul>
@@ -41,18 +41,18 @@
         data-bs-parent="#accordionExample">
         <div class="accordion-body mx-4">
           <ul>
-            <li><a href="studentlist">
+            <li><a [routerLink]="['/liststudent']">
                 <h3>Student List</h3>
               </a></li>
-            <li> <a href="">
+            <li> <a [routerLink]="['/viewstudent']">
                 <h3>Student View</h3>
               </a></li>
-            <li> <a href="studentadd">
+            <li> <a [routerLink]="['/addstudent']">
                 <h3>Student Add</h3>
               </a></li>
-            <li> <a href="studentedit">
+            <li> <a [routerLink]="['/editstudent']">
                 <h3>Student Edit</h3>
-              </a></li> 
+              </a></li>
           </ul>
         </div>
       </div>
@@ -68,16 +68,16 @@
         data-bs-parent="#accordionExample">
         <div class="accordion-body mx-4">
           <ul>
-            <li><a href="">
+            <li><a [routerLink]="['/teacherlist']">
                 <h3>Teacher List</h3>
               </a></li>
-            <li> <a href="">
+            <li> <a [routerLink]="['/teacherview']">
                 <h3>Teacher View</h3>
               </a></li>
-            <li> <a href="">
+            <li> <a [routerLink]="['/teacheradd']">
                 <h3>Teacher Add</h3>
               </a></li>
-            <li> <a href="">
+            <li> <a [routerLink]="['/teacheredit']">
                 <h3>Teacher Edit</h3>
               </a></li>
           </ul>
@@ -130,9 +130,29 @@
             <li> <a href="editsubject">
                 <h3>Subject Edit</h3>
               </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
 
-              
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading6">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
+          aria-expanded="false" aria-controls="collapse6">
+          <h4 style="margin-top: 30px;"><i class="fa-solid fa-list-check mx-2"></i>Attendance</h4>
+        </button>
+      </h2>
+      <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body mx-4">
+          <ul>
+            <li><a [routerLink]="['/studattend']">
+                <h3>Student Attendance</h3>
+              </a></li>
+            <li> <a [routerLink]="['/viewattend']">
+                <h3>View Attendance</h3>
+              </a></li>
           </ul>
         </div>
       </div>
@@ -143,226 +163,230 @@
 
   <h3 class="text-center my-2">Management</h3>
   <div class="manage">
-  <div class="accordion " id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="heading_1">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1"
-          aria-expanded="false" aria-controls="collapse_1">
-          <h4 style="margin-top: 30px;"><i class="fa-sharp fa-solid fa-file-invoice-dollar mx-2"></i>Account</h4>
-        </button>
-      </h2>
-      <div id="collapse_1" class="accordion-collapse collapse" aria-labelledby="headingThree"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body mx-4">
-          <ul>
-            <li><a [routerLink]="['feesCollection']">
-                <h3>Fees Collection</h3>
-              </a></li>
-            <li> <a href="">
-                <h3>Expenses</h3>
-              </a></li>
-            <li> <a href="">
-                <h3>Salary</h3>
-              </a></li>
-            <li><a href="">
-                <h3>Add Fees</h3>
-              </a></li>
-            <li> <a href="">
-                <h3>Add Expenses</h3>
-              </a></li>
-            <li> <a href="">
-                <h3>Add Salary</h3>
-              </a></li>
-          </ul>
+    <div class="accordion " id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading_1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse_1" aria-expanded="false" aria-controls="collapse_1">
+            <h4 style="margin-top: 30px;"><i class="fa-sharp fa-solid fa-file-invoice-dollar mx-2"></i>Account</h4>
+          </button>
+        </h2>
+        <div id="collapse_1" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body mx-4">
+            <ul>
+              <li><a [routerLink]="['feesCollection']">
+                  <h3>Fees Collection</h3>
+                </a></li>
+              <li> <a href="">
+                  <h3>Expenses</h3>
+                </a></li>
+              <li> <a href="">
+                  <h3>Salary</h3>
+                </a></li>
+              <li><a href="">
+                  <h3>Add Fees</h3>
+                </a></li>
+              <li> <a href="">
+                  <h3>Add Expenses</h3>
+                </a></li>
+              <li> <a href="">
+                  <h3>Add Salary</h3>
+                </a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+    <a href="">
+      <h4 class="mx-4" style="margin-top:15px;"><i class="fa-solid fa-holly-berry mx-2"></i>Holiday</h4>
+    </a>
+    <a href="">
+      <h4 class="mx-4"><i class="fa-solid fa-comment-dollar mx-2"></i>Fees</h4>
+    </a>
+    <a href="">
+      <h4 class="mx-4"><i class="fa-solid fa-list-check mx-2"></i>Examlist</h4>
+    </a>
+    <a href="">
+      <h4 class="mx-4"><i class="fa-solid fa-calendar-day mx-2"></i>Events</h4>
+    </a>
+    <a href="">
+      <h4 class="mx-4"><i class="fa-solid fa-table mx-2"></i>Time Table</h4>
+    </a>
+    <a href="">
+      <h4 class="mx-4"><i class="fa-solid fa-book mx-2"></i>Library</h4>
+    </a>
   </div>
-  <a href="">
-    <h4 class="mx-4" style="margin-top:15px;"><i class="fa-solid fa-holly-berry mx-2"></i>Holiday</h4>
-  </a>
-  <a href="">
-    <h4 class="mx-4"><i class="fa-solid fa-comment-dollar mx-2"></i>Fees</h4>
-  </a>
-  <a href="">
-    <h4 class="mx-4"><i class="fa-solid fa-list-check mx-2"></i>Examlist</h4>
-  </a>
-  <a href="">
-    <h4 class="mx-4"><i class="fa-solid fa-calendar-day mx-2"></i>Events</h4>
-  </a>
-  <a href="">
-    <h4 class="mx-4"><i class="fa-solid fa-table mx-2"></i>Time Table</h4>
-  </a>
-  <a href="">
-    <h4 class="mx-4"><i class="fa-solid fa-book mx-2"></i>Library</h4>
-  </a>
-</div>
 
   <h3 class="text-center">Pages</h3>
   <div class="manage">
-  <div class="accordion " id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="heading_2">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
-          <h4 style="margin-top: 30px;"><i class="fa-solid fa-shield-halved mx-2"></i>Authentication</h4>
-        </button>
-      </h2>
-      <div id="collapse_2" class="accordion-collapse collapse" aria-labelledby="headingThree"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body mx-4">
-          <ul>
-            <li><a href="">
-                <h3>Login</h3>
-              </a></li>
-            <li> <a [routerLink]="['/register/']">
-                <h3>Register</h3>
-              </a></li>
-            <li> <a href="">
-                <h3>Forget Password</h3>
-              </a></li>
-            <li><a href="">
-                <h3>Error Page</h3>
-              </a></li>
-          </ul>
+
+
+
+    <div class="accordion " id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading_2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+            <h4 style="margin-top: 30px;"><i class="fa-solid fa-shield-halved mx-2"></i>Authentication</h4>
+          </button>
+        </h2>
+        <div id="collapse_2" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body mx-4">
+            <ul>
+              <li><a [routerLink]="['/login/']">
+                  <h3>Login</h3>
+                </a></li>
+              <li> <a [routerLink]="['/register/']">
+                  <h3>Register</h3>
+                </a></li>
+              <li> <a [routerLink]="['/forgot/']">
+                  <h3>Forget Password</h3>
+                </a></li>
+              <li><a [routerLink]="['/error']">
+                  <h3>Error Page</h3>
+                </a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <a href="">
-    <h4 class="mx-4" style="margin-top:15px;"><i class="fa-solid fa-file mx-2"></i>Blank Page</h4>
-  </a>
-</div>
+    <a href="">
+      <h4 class="mx-4" style="margin-top:15px;"><i class="fa-solid fa-file mx-2"></i>Blank Page</h4>
+    </a>
+  </div>
 
   <h3 class="mx-4">Others</h3>
 
   <div class="manage">
-  <a href="">
-    <h4 class="mx-4"><i class="fa-solid fa-volleyball mx-2"></i>Sports</h4>
-  </a>
-  <a href="">
-    <h4 class="mx-4"><i class="fa-solid fa-hotel mx-2"></i>Hostel</h4>
-  </a>
-  <a href="">
-    <h4 class="mx-4" ><i class="fa-solid fa-car-side mx-2 "></i>Transport</h4>
-  </a>
-</div>
+    <a href="">
+      <h4 class="mx-4"><i class="fa-solid fa-volleyball mx-2"></i>Sports</h4>
+    </a>
+    <a href="">
+      <h4 class="mx-4"><i class="fa-solid fa-hotel mx-2"></i>Hostel</h4>
+    </a>
+    <a href="">
+      <h4 class="mx-4"><i class="fa-solid fa-car-side mx-2 "></i>Transport</h4>
+    </a>
+  </div>
 
   <h3 class="text-center">UI Interface</h3>
   <div class="manage">
-  <a href="">
-    <h4 class="mx-4"><i class="fa-sharp fa-solid fa-network-wired mx-2"></i>Components</h4>
-  </a>
+    <a href="">
+      <h4 class="mx-4"><i class="fa-sharp fa-solid fa-network-wired mx-2"></i>Components</h4>
+    </a>
 
 
-  <div class="accordion " id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="heading_3">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
-          <h4 style="margin-top: 30px;"><i class="fa-brands fa-wpforms mx-2"></i>Forms</h4>
-        </button>
-      </h2>
-      <div id="collapse_3" class="accordion-collapse collapse" aria-labelledby="headingThree"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body mx-4">
-          <ul>
-            <li><a href="">
-                <h3>Basic inputs</h3>
-              </a></li>
-            <li> <a href="">
-                <h3>Input Groups </h3>
-              </a></li>
-            <li> <a href="">
-                <h3>Horizontal Form</h3>
-              </a></li>
-            <li><a href="">
-                <h3>Vertical Form</h3>
-              </a></li>
-            <li> <a href="">
-                <h3>Form Mask</h3>
-              </a></li>
-            <li> <a href="">
-                <h3>Form Validation</h3>
-              </a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="accordion " id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="heading_4">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
-          <h4 style="margin-top: 30px;"><i class="fa-sharp fa-solid fa-table mx-2"></i>Tables</h4>
-        </button>
-      </h2>
-      <div id="collapse_4" class="accordion-collapse collapse" aria-labelledby="headingThree"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body mx-4">
-          <ul>
-            <li><a href="">
-                <h3>Basic Tables</h3>
-              </a></li>
-            <li> <a href="">
-                <h3>Data Table</h3>
-              </a></li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="accordion " id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="heading_5">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
-          <h4 style="margin-top: 30px;"><i class="fa-solid fa-code mx-2 mx-2"></i>Multi Level</h4>
-        </button>
-      </h2>
-      <div id="collapse_5" class="accordion-collapse collapse" aria-labelledby="headingThree"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body mx-4">
-          <div class="accordion " id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading01">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapse01" aria-expanded="false" aria-controls="collapse01">
-                  <h4 style="margin-top: 30px;"><i class="fa-solid fa-book-open-reader mx-2"></i>Level 1</h4>
-                </button>
-              </h2>
-              <div id="collapse01" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body mx-4">
-                 <h4>This is Level 1</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordion " id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading02">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapse02" aria-expanded="false" aria-controls="collapse02">
-                  <h4 style="margin-top: 30px;"><i class="fa-solid fa-book-open-reader mx-2"></i>Level 2</h4>
-                </button>
-              </h2>
-              <div id="collapse02" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body mx-4">
-                 <h4>This is level 2</h4>
-                </div>
-              </div>
-            </div>
+    <div class="accordion " id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading_3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
+            <h4 style="margin-top: 30px;"><i class="fa-brands fa-wpforms mx-2"></i>Forms</h4>
+          </button>
+        </h2>
+        <div id="collapse_3" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body mx-4">
+            <ul>
+              <li><a href="">
+                  <h3>Basic inputs</h3>
+                </a></li>
+              <li> <a href="">
+                  <h3>Input Groups </h3>
+                </a></li>
+              <li> <a href="">
+                  <h3>Horizontal Form</h3>
+                </a></li>
+              <li><a href="">
+                  <h3>Vertical Form</h3>
+                </a></li>
+              <li> <a href="">
+                  <h3>Form Mask</h3>
+                </a></li>
+              <li> <a href="">
+                  <h3>Form Validation</h3>
+                </a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="accordion " id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading_4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+            <h4 style="margin-top: 30px;"><i class="fa-sharp fa-solid fa-table mx-2"></i>Tables</h4>
+          </button>
+        </h2>
+        <div id="collapse_4" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body mx-4">
+            <ul>
+              <li><a href="">
+                  <h3>Basic Tables</h3>
+                </a></li>
+              <li> <a href="">
+                  <h3>Data Table</h3>
+                </a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion " id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading_5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+            <h4 style="margin-top: 30px;"><i class="fa-solid fa-code mx-2 mx-2"></i>Multi Level</h4>
+          </button>
+        </h2>
+        <div id="collapse_5" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body mx-4">
+            <div class="accordion " id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading01">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse01" aria-expanded="false" aria-controls="collapse01">
+                    <h4 style="margin-top: 30px;"><i class="fa-solid fa-book-open-reader mx-2"></i>Level 1</h4>
+                  </button>
+                </h2>
+                <div id="collapse01" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body mx-4">
+                    <h4>This is Level 1</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion " id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading02">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse02" aria-expanded="false" aria-controls="collapse02">
+                    <h4 style="margin-top: 30px;"><i class="fa-solid fa-book-open-reader mx-2"></i>Level 2</h4>
+                  </button>
+                </h2>
+                <div id="collapse02" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body mx-4">
+                    <h4>This is level 2</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+
 </mat-nav-list>
